@@ -18,7 +18,7 @@
     "href": "posts/post-with-code/index.html",
     "title": "Random Variable",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "In this blog, we will discuss random variables, types of random variables, and how to simulate using python."
   },
   {
     "objectID": "index.html",
@@ -26,5 +26,26 @@
     "title": "Machine Learning Blog",
     "section": "",
     "text": "Random Variable\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\n\n\n\n\nDec 3, 2023\n\n\nMohaimin\n\n\n\n\n\n\n  \n\n\n\n\nSecond blog\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\n\n\n\n\nNov 30, 2023\n\n\nMohaimin\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#introduction",
+    "href": "posts/post-with-code/index.html#introduction",
+    "title": "Random Variable",
+    "section": "Introduction",
+    "text": "Introduction\nIn this post, we’ll explore the concept of random variables in the context of machine learning. Understanding random variables is crucial because they form the foundation of probabilistic models and statistical inference used in various machine learning algorithms.\n\nWhat is a Random Variable?\nA random variable is a variable whose possible values are numerical outcomes of a random phenomenon. In machine learning, we often deal with two types of random variables:\n\nDiscrete Random Variables: These variables can take on a finite or countably infinite set of values. For example, the number of heads in a series of coin tosses.\nContinuous Random Variables: These variables can take on any value within a range. For example, the weight or height of a person."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#example-simulating-random-variables-with-python",
+    "href": "posts/post-with-code/index.html#example-simulating-random-variables-with-python",
+    "title": "Random Variable",
+    "section": "Example: Simulating Random Variables with Python",
+    "text": "Example: Simulating Random Variables with Python\nLet’s dive into some Python code to see how we can work with random variables. We’ll use the numpy and matplotlib libraries, so make sure to install them first using pip:\npip install numpy matplotlib\n\nDiscrete Random Variables\nFirst, we’ll simulate a simple discrete random variable: the result of a dice roll.\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Simulating dice rolls\nnp.random.seed(0)\ndice_rolls = np.random.randint(1, 7, size=1000)\n\n# Plotting the results\nplt.hist(dice_rolls, bins=np.arange(1, 8)-0.5, rwidth=0.8)\nplt.title('Dice Roll Distribution')\nplt.xlabel('Dice Value')\nplt.ylabel('Frequency')\nplt.xticks(range(1, 7))\nplt.show()\nThis code simulates rolling a six-sided dice 1000 times and plots the distribution of the outcomes.\n\n\nContinuous Random Variables\nNow, let’s look at a continuous random variable. We’ll simulate data that follows a normal distribution.\n# Simulating a normal distribution\nnp.random.seed(0)\nnormal_data = np.random.normal(loc=0, scale=1, size=1000)\n\n# Plotting the results\nplt.hist(normal_data, bins=30, density=True, alpha=0.6, color='g')\nplt.title('Normal Distribution')\nplt.xlabel('Value')\nplt.ylabel('Density')\nplt.show()\nThis code generates 1000 data points from a normal distribution with a mean of 0 and a standard deviation of 1."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#conclusion",
+    "href": "posts/post-with-code/index.html#conclusion",
+    "title": "Random Variable",
+    "section": "Conclusion",
+    "text": "Conclusion\nRandom variables are a fundamental concept in machine learning, as they underpin many algorithms and models. Understanding how to simulate and work with these variables in Python is a valuable skill for any aspiring data scientist or machine learning practitioner."
   }
 ]
