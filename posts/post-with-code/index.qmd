@@ -27,7 +27,7 @@ A random variable is a variable whose possible values are numerical outcomes of 
 
 Let's dive into some Python code to see how we can work with random variables. We'll use the `numpy` and `matplotlib` libraries, so make sure to install them first using pip:
 
-```bash
+```{bash}
 pip install numpy matplotlib
 ```
 
@@ -35,7 +35,7 @@ pip install numpy matplotlib
 
 First, we'll simulate a simple discrete random variable: the result of a dice roll.
 
-```python
+```{python}
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -58,7 +58,7 @@ This code simulates rolling a six-sided dice 1000 times and plots the distributi
 
 Now, let's look at a continuous random variable. We'll simulate data that follows a normal distribution.
 
-```python
+```{python}
 # Simulating a normal distribution
 np.random.seed(0)
 normal_data = np.random.normal(loc=0, scale=1, size=1000)
